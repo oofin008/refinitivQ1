@@ -1,0 +1,26 @@
+.my-container {
+  display: grid;
+  grid-template-columns: 200px auto 300px;
+  width: 100%;
+  height: 200px;
+}
+
+.my-col-1 {
+  background-color: red;
+}
+
+.my-col-2 {
+  min-width: 100px;
+  color: wheat;
+  background-color: blue;
+}
+
+.my-col-3 {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-col-2 {
+    overflow-x: scroll;
+  }
+}
